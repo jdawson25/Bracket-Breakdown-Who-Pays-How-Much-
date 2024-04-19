@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Break Breakdown: About page</title>
+    </head>
+    <body>
+        {% include 'navbar.html' %}
+<h1>Bracket Breakdown: Who Pays How Much?</h1>
+
+<h3>Most Americans hold strong opinions about the tax system. Some Republicans think that a flat tax of about 10% across all tax brackets is most fair. Many Social Democrats would like to see increased tax rates and a new annual wealth tax on a person's networth. Then there are people around the middle who have mixed opinions about the current system, but don't want any drastic change.
+    <br><br>
+Athough many people hold such strong views, most people do not know the true numbers that each tax bracket brings in and then pays back in taxes. This website seeks to present what the figures actually look like so more people can be informed. 
+<br><br>
+To do this, I will present data about the median household's Adjusted Gross Income in each zipcode in NYC such as which tax bracket the median earner is in, the tax rate for that bracket, how much that bracket makes of total AGI and the share of all taxes paid by that bracket, etc. I will use these figures to also compare wealth inequality
+
+<br><br>
+Someone's AGI (Adjusted Gross Income), is their earnings minus their deductions.
+<br><br>
+This website does not endorse any particular view.</h3>
+
+<h5>Data Cleansing Pipeline</h5>
+<ol>
+<li>Downloaded csvs from <a href="https://taxfoundation.org/data/all/federal/latest-federal-income-tax-data-2024/">taxfoundation.org.</a></li>
+<li>Cleansed unneeded rows in Google Sheets and downloaded cleansed csvs.</li>
+<li>Converted cleansed csvs into json objects with <a href="https://github.com/jdawson25/Bracket-Breakdown-Who-Pays-How-Much-/blob/main/Data%20Journalism%20Project/data/format_data.py">format_data.py.</a></li>
+</ol>
+
+<h5>Prototypes</h5>
+<img src="{{ url_for('static', filename='Screenshot 2024-04-19 at 11.01.15 AM.png')}}"  width="500" height="600">
+<img src="{{ url_for('static', filename='IMG_0890-1.jpg') }}"  width="500" height="600">
+
+<h3>I changed my original design by making a better infograph according to the feedback I received.</h3>
+
+
+
+
+
+<footer>
+    {% include 'footer.html' %}
+  </footer>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
